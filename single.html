@@ -270,14 +270,14 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
         try{ 
             if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){ 
                // window.location.href="http://shipei.qq.com/index.htm"; 
-			  
-			   $("#phone").val("0");
-            }else if(/iPad/i.test(navigator.userAgent)){ 
+			  document.getElementById("phone").value="0";
+			  }else if(/iPad/i.test(navigator.userAgent)){ 
             }else{ 
 //                window.location.href="http://shipei.qq.com/simple/s/index/" 
-			   $("#phone").val("1");
+			  // $("#phone").val("1");
+			  document.getElementById("phone").value="1"; 
             }
-			if($("#phone").val()=="1")
+			if(document.getElementById("phone").value=="1")
 			{
 				alert(1);
 			   $("#youkuplayer").css("width","480px");
