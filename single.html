@@ -112,8 +112,6 @@
 	<a href="#" class="fh5co-post-next"><span>Next <i class="icon-chevron-right"></i></span></a>
 	<!-- END #fh5co-header -->
 	<div class="container-fluid">
-	<input type="hidden" value="0" id="phone">
-	<input type="hidden" value="0" id="whitephone">
 
 		<div class="row fh5co-post-entry single-entry">
 			<article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
@@ -247,6 +245,9 @@
 		</div>
 	</div>
 
+	<input type="text" value="0" id="phone"> 
+
+
 	<footer id="fh5co-footer">
 		<p><small>&copy; 2016. Magazine Free HTML5. All Rights Reserverd. <br> More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></small></p>
 	</footer>
@@ -269,7 +270,7 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
         try{ 
             if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){ 
                // window.location.href="http://shipei.qq.com/index.htm"; 
-			   alert(11);
+			  
 			   $("#phone").val("0");
             }else if(/iPad/i.test(navigator.userAgent)){ 
             }else{ 
@@ -279,14 +280,14 @@ if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SA
 			if($("#phone").val()=="1")
 			{
 				alert(1);
-			   $("#whitephone").css("width","480px");
-			   $("#whitephone").css("height","400px");
+			   $("#youkuplayer").css("width","480px");
+			   $("#youkuplayer").css("height","400px");
 			}
 			else
 			{
 				alert(111);
-			   $("#whitephone").css("width","auto");
-			   $("#whitephone").css("height","211px");
+			   $("#youkuplayer").css("width","auto");
+			   $("#youkuplayer").css("height","211px");
 			}
         }
 		catch(e){
