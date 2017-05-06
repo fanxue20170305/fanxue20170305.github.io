@@ -112,6 +112,39 @@
 	<a href="#" class="fh5co-post-next"><span>Next <i class="icon-chevron-right"></i></span></a>
 	<!-- END #fh5co-header -->
 	<div class="container-fluid">
+	<input type="hidden" value="0" id="phone">
+	<input type="hidden" value="0" id="whitephone">
+<!-- 浏览器 -->
+	<script type="text/javascript">  
+if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){ 
+    if(window.location.href.indexOf("?mobile")<0){ 
+        try{ 
+            if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){ 
+               // window.location.href="http://shipei.qq.com/index.htm"; 
+			   $("#phone").val("0");
+            }else if(/iPad/i.test(navigator.userAgent)){ 
+            }else{ 
+//                window.location.href="http://shipei.qq.com/simple/s/index/" 
+			   $("#phone").val("1");
+            }
+			if($("#phone").val()=="1")
+			{
+			   $("#whitephone").css("width","480px");
+			   $("#whitephone").css("height","400px");
+			}
+			else
+			{
+			   $("#whitephone").css("width","auto");
+			   $("#whitephone").css("height","211px");
+			}
+        }
+		catch(e){
+
+		} 
+    } 
+} 
+</script> 
+<!-- End -->
 		<div class="row fh5co-post-entry single-entry">
 			<article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
 				<figure class="animate-box">
