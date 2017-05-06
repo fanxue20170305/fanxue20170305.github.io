@@ -49,6 +49,25 @@
 
 	</head>
 	<body>
+
+		<script type="text/javascript">  
+  if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)))
+    {    //跳到手机端
+      //  window.location="http://www.tzlm.com";
+	  $("#youkuplayer").css("width","auto");
+		$("#youkuplayer").css("height","211px");
+ 
+    }else{
+        //跳到电脑端
+        //window.location="http://www.baidu.com";
+		$("#youkuplayer").css("width","480px");
+		$("#youkuplayer").css("height","400px");
+		//	<div id="youkuplayer" style="width:auto;height:211px"></div>
+		//$("div").css("width","100%");
+    }
+</script> 
+
+
 	<div id="fh5co-offcanvas">
 		<a href="#" class="fh5co-close-offcanvas js-fh5co-close-offcanvas"><span><i class="icon-cross3"></i> <span>Close</span></span></a>
 		<div class="fh5co-bio">
@@ -264,26 +283,7 @@
 	<script src="js/main.js"></script>
 
 <!-- 浏览器 -->
-	<script type="text/javascript">  
-if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){ 
-    if(window.location.href.indexOf("?mobile")<0){ 
-        try{ 
-            if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){ 
-                window.location.href="http://www.163.com/"; 
-		 
-			  }else if(/iPad/i.test(navigator.userAgent)){ 
-            }else{ 
-                 window.location.href="http://www.sina.com/"; 
-			  
-            }
-			 
-        }
-		catch(e){
 
-		} 
-    } 
-} 
-</script> 
 <!-- End -->
 
 	</body>
